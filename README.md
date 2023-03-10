@@ -1,1 +1,1 @@
-https://${NinaSher}.github.io/cssBayan/cssBayan/index.html
+https://NinaSher.github.io/cssBayan/cssBayan/index.html
