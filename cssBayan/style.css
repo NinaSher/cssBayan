@@ -11,7 +11,7 @@
 	background-color: #777;
 	color: #555;
 	cursor: pointer;
-	padding: 18px;
+	padding: 30px;
    width: 100%;
    text-align: left;
    border: none;
@@ -19,15 +19,22 @@
    transition: 0.3s;
 }
 .accordion__head{
-	background-color: #555;
+	background-color: inherit;
 	display:block;
 	padding: 8px;
-	color: white;
+	margin: 10px;
+	color: #eee;
+	border: 1px solid #555;
 }
-
+.accordion__head:hover{
+	background-color: #999;
+}
+.accordion__head.active{
+	background-color: #999;
+}
 .accordion__body{
-	padding: 0 20px;
-	background-color: #555;
+	padding: 0 30px;
+	background-color: #999;
 	display: none;
 	overflow: hidden;
 	transition: 
@@ -48,6 +55,7 @@
 }
 .accordion__head:hover ~ .accordion__body{
 	display: block;
+	
 }
 .accordion__input:checked ~ .accordion__body{
 	display: block;
