@@ -10,18 +10,17 @@
 .accordion{
 	background-color: #777;
 	color: #555;
-	cursor: pointer;
 	padding: 30px;
    width: 100%;
    text-align: left;
    border: none;
    outline: none;
-   transition: 0.3s;
+   transition: 0.2s;
 }
 .accordion__head{
 	background-color: inherit;
-	display:block;
-	padding: 8px;
+	display: block;
+	padding: 20px;
 	margin: 10px;
 	color: #eee;
 	border: 1px solid #555;
@@ -36,7 +35,7 @@
 	display: none;
 	overflow: hidden;
 	transition: 
-		height 0.3s ease-in-out,
+		height 0.2s ease-in-out,
 		box-shadow 0.1s linear;
 	justify-content: center;
 }
@@ -47,6 +46,10 @@
 .accordion__body img{
 	margin: 10px auto 20px;
    display: block;
+	max-width: 100%;
+}
+.accordion__body icon{
+	color: #eee;
 }
 .accordion__input{
 	display: none;
@@ -60,4 +63,26 @@
 }
 .wrapper:hover.accordion__head{
 	cursor: pointer;
+}
+
+@media screen and(min-width: 320px) {
+	.wrapper {
+		width: 100%;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+		width: auto\9;
+	}
+}
+@media screen and(min-width: 820px) {
+	.wrapper{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and(min-width: 1920px) {
+	.wrapper{
+		width: 50%;
+	}
 }
