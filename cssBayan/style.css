@@ -26,10 +26,8 @@
 	color: #eee;
 	border: 1px solid #555;
 }
+.accordion__head.active,
 .accordion__head:hover{
-	background-color: #999;
-}
-.accordion__head.active{
 	background-color: #999;
 }
 .accordion__body{
