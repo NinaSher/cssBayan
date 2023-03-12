@@ -5,39 +5,44 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Dayan</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="accordion">
-		<ul>
-			<li>
-				<h2>Learn js</h2>
+	<div class="wrapper">
+		<div class="accordion">
+			<div class="accordion__item">
+				<label class="accordion__head" for="accor__1">Learn js</label>
+				<input class="accordion__input"  type="checkbox" checked="checked" name="accor" id="accor__1">
 				<div class="accordion__body">
 					<p>Start learning</p>
 					<img src="img/start.gif">
+					<div class="icon"></div>
 				</div>
-			</li>
-			<li>
-				<h2>Read</h2>
+			</div>
+			<div class="accordion__item">
+				<label class="accordion__head" for="accor__2">Read</label>
+				<input class="accordion__input"  type="checkbox" checked="checked" name="accor" id="accor__2">
 				<div class="accordion__body">
 					<p>Read a lot</p>
 					<img src="img/read.gif">
 				</div>
-			</li>
-			<li>
-				<h2>Reast</h2>
+			</div>	
+			<div class="accordion__item">
+				<label class="accordion__head" for="accor__3">Reast</label>
+				<input class="accordion__input"  type="checkbox" checked="checked" name="accor" id="accor__3">
 				<div class="accordion__body">
 					<p>Get a lot of rest</p>
 					<img src="img/reast.gif">
 				</div>
-			</li>
-			<li>
-				<h2>Communication</h2>
+			</div>	
+			<div class="accordion__item">
+				<label class="accordion__head" for="accor__4">Communication</label>
+				<input class="accordion__input"  type="checkbox" checked="checked" name="accor" id="accor__4">
 				<div class="accordion__body">
 					<p>Communicate a lot</p>
 					<img src="img/communicate.gif">
-				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
